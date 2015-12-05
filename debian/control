@@ -24,8 +24,10 @@ Depends: ${misc:Depends},
 Recommends: ${python:Recommends}
 Suggests: ${python:Suggests}
 XB-Python-Egg-Name: Flask-API
-Description: Browsable web APIs for Flask - Python 2.X
- Browsable web APIs for Flask.
+Description: Browsable web APIs for the Flask micro web framework - Python 2.X
+ Flask API is an implementation of the same web browsable APIs that the
+ Django REST framework provides. It gives you properly content
+ negotiated responses and smart request parsing.
 
 Package: python3-flask-api
 Architecture: all
@@ -35,5 +37,7 @@ Depends: ${misc:Depends},
 Recommends: ${python3:Recommends}
 Suggests: ${python3:Suggests}
 XB-Python-Egg-Name: Flask-API
-Description: Browsable web APIs for Flask
- Browsable web APIs for Flask.
+Description: Browsable web APIs for the Flask micro web framework
+ Flask API is an implementation of the same web browsable APIs that the
+ Django REST framework provides. It gives you properly content
+ negotiated responses and smart request parsing.
