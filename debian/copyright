@@ -1,0 +1,14 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Flask-API
+Upstream-Contact: Tom Christie <tom@tomchristie.com>
+Source: http://www.flaskapi.org
+
+Files: *
+Copyright: Tom Christie <tom@tomchristie.com>
+License: BSD
+
+Files: debian/*
+Copyright: 2015 © Stefano Zacchiroli <zack@debian.org>
+License: BSD
+
+License: BSD

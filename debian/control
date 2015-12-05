@@ -1,0 +1,33 @@
+Source: flask-api
+Section: python
+Priority: optional
+Maintainer: Stefano Zacchiroli <zack@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), dh-python,
+               python-all,
+               python-flask,
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+Standards-Version: 3.9.6
+Homepage: http://www.flaskapi.org
+Vcs-Git: git://anonscm.debian.org/python-modules/packages/flask-api.git
+Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/flask-api.git
+
+Package: python-flask-api
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+Recommends: ${python:Recommends}
+Suggests: ${python:Suggests}
+XB-Python-Egg-Name: Flask-API
+Description: Browsable web APIs for Flask - Python 2.X
+ Browsable web APIs for Flask.
+
+Package: python3-flask-api
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends},
+Recommends: ${python3:Recommends}
+Suggests: ${python3:Suggests}
+XB-Python-Egg-Name: Flask-API
+Description: Browsable web APIs for Flask
+ Browsable web APIs for Flask.
