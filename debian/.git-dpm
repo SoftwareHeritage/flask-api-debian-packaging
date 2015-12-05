@@ -6,3 +6,6 @@ c647819ab0b6ed1bac761e8a731312cc18e19873
 flask-api_0.6.4+dfsg.orig.tar.gz
 5ef36c6a97cf7ec8bae2a55ae01f577e53f6cdd7
 44872
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
