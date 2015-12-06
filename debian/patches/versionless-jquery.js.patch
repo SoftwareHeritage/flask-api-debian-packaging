@@ -1,0 +1,23 @@
+From 812f5785ec0be77d99b9eaab07e6618bac513900 Mon Sep 17 00:00:00 2001
+From: Stefano Zacchiroli <zack@upsilon.cc>
+Date: Sun, 6 Dec 2015 14:31:24 +0100
+Subject: use versionless file name for jquery.min.js
+
+Patch-Name: versionless-jquery.js.patch
+---
+ flask_api/templates/base.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/flask_api/templates/base.html b/flask_api/templates/base.html
+index 0a60422..152d0f4 100644
+--- a/flask_api/templates/base.html
++++ b/flask_api/templates/base.html
+@@ -181,7 +181,7 @@
+     {% endblock %}
+ 
+     {% block script %}
+-    <script src="{{url_for('flask-api.static', filename='js/jquery-1.8.1-min.js')}}"></script>
++    <script src="{{url_for('flask-api.static', filename='js/jquery.min.js')}}"></script>
+     <script src="{{url_for('flask-api.static', filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{url_for('flask-api.static', filename='js/prettify-min.js')}}"></script>
+     <script src="{{url_for('flask-api.static', filename='js/default.js')}}"></script>
