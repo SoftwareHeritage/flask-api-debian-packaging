@@ -20,7 +20,10 @@ Package: python-flask-api
 Architecture: all
 Depends: ${misc:Depends},
          ${python:Depends},
-         python-flask (>= 0.10.1)
+         python-flask (>= 0.10.1),
+         libjs-bootstrap,
+         libjs-jquery,
+         libjs-prettify
 Recommends: ${python:Recommends}
 Suggests: ${python:Suggests}
 XB-Python-Egg-Name: Flask-API
@@ -33,7 +36,10 @@ Package: python3-flask-api
 Architecture: all
 Depends: ${misc:Depends},
          ${python3:Depends},
-         python3-flask (>= 0.10.1)
+         python3-flask (>= 0.10.1),
+         libjs-bootstrap,
+         libjs-jquery,
+         libjs-prettify
 Recommends: ${python3:Recommends}
 Suggests: ${python3:Suggests}
 XB-Python-Egg-Name: Flask-API
