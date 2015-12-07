@@ -2,5 +2,4 @@ flask-api (0.6.4+dfsg-1) unstable; urgency=low
 
   * Initial release (Closes: #807053).
 
- -- Stefano Zacchiroli <zack@debian.org>  Sat, 05 Dec 2015 18:42:45 +0100
-
+ -- Nicolas Dandrimont <olasd@debian.org>  Mon, 07 Dec 2015 13:21:04 +0100
