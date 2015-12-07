@@ -1,0 +1,27 @@
+#!/bin/bash
+set -e
+
+tmpdir=$(mktemp -d)
+trap "rm -rf $tmpdir" EXIT
+
+uscan --force-download --destdir "$tmpdir"
+
+pushd "$tmpdir" > /dev/null
+tar xaf *orig*
+orig_srcdir=$(find . -mindepth 1 -maxdepth 1 -type d | head -n 1 | sed 's|\./||')
+
+pushd "$orig_srcdir" > /dev/null
+rm -r flask_api/__pycache__ flask_api/tests/__pycache__
+rm flask_api/static/js/bootstrap.min.js flask_api/static/css/bootstrap.min.css
+rm flask_api/static/js/jquery*min.js
+rm flask_api/static/js/prettify-min.js flask_api/static/css/prettify.css
+popd > /dev/null
+
+new_srcdir="${orig_srcdir}+dfsg"
+new_tarball=$(echo "$new_srcdir" | tr A-Z a-z | sed 's|-\([0-9]\)|_\1|').orig.tar.gz
+mv "$orig_srcdir" "$new_srcdir"
+tar caf "$new_tarball" "$new_srcdir"
+popd > /dev/null
+
+cp "${tmpdir}/${new_tarball}" .
+echo "Repackaged tarball: ./${new_tarball}"
