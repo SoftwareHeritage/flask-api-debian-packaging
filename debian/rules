@@ -3,3 +3,9 @@
 export PYBUILD_NAME=flask-api
 %:
 	dh $@ --with python2,python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+
+	rm -rv $(CURDIR)/debian/*/usr/lib/python*/dist-packages/flask_api/static
+	rm -rv $(CURDIR)/debian/*/usr/lib/python*/dist-packages/flask_api/templates

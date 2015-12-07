@@ -19,12 +19,10 @@ Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/flask-api.g
 
 Package: python-flask-api
 Architecture: all
-Depends: ${misc:Depends},
-         ${python:Depends},
-         python-flask (>= 0.10.1),
-         libjs-bootstrap,
-         libjs-jquery,
-         libjs-prettify
+Depends: python-flask (>= 0.10.1),
+         python-flask-api-common (= ${source:Version}),
+         ${misc:Depends},
+         ${python:Depends}
 Recommends: ${python:Recommends}
 Suggests: ${python:Suggests}
 XB-Python-Egg-Name: Flask-API
@@ -37,12 +35,10 @@ Description: Browsable web APIs for the Flask micro web framework - Python 2.X
 
 Package: python3-flask-api
 Architecture: all
-Depends: ${misc:Depends},
-         ${python3:Depends},
+Depends: python-flask-api-common (= ${source:Version}),
          python3-flask (>= 0.10.1),
-         libjs-bootstrap,
-         libjs-jquery,
-         libjs-prettify
+         ${misc:Depends},
+         ${python3:Depends}
 Recommends: ${python3:Recommends}
 Suggests: ${python3:Suggests}
 XB-Python-Egg-Name: Flask-API
@@ -52,3 +48,13 @@ Description: Browsable web APIs for the Flask micro web framework
  negotiated responses and smart request parsing.
  .
  This package contains the Python 3 version of Flask API
+
+Package: python-flask-api-common
+Architecture: all
+Depends: libjs-bootstrap, libjs-jquery, libjs-prettify, ${misc:Depends}
+Description: Browsable web APIs for the Flask micro web framework - static resources
+ Flask API is an implementation of the same web browsable APIs that the
+ Django REST framework provides. It gives you properly content
+ negotiated responses and smart request parsing.
+ .
+ This package contains the static resources for Flask API

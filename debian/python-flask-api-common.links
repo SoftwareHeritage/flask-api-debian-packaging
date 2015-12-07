@@ -1,0 +1,7 @@
+usr/share/javascript/bootstrap/js/bootstrap.min.js usr/share/flask-api/static/js/bootstrap.min.js
+usr/share/javascript/bootstrap/css/bootstrap.min.css   usr/share/flask-api/static/css/bootstrap.min.css
+
+usr/share/javascript/jquery/jquery.min.js      usr/share/flask-api/static/js/jquery.min.js
+
+usr/share/javascript/prettify/prettify.js      usr/share/flask-api/static/js/prettify-min.js
+usr/share/javascript/prettify/prettify.css     usr/share/flask-api/static/css/prettify.css
