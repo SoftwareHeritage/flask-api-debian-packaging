@@ -31,6 +31,8 @@ Description: Browsable web APIs for the Flask micro web framework - Python 2.X
  Flask API is an implementation of the same web browsable APIs that the
  Django REST framework provides. It gives you properly content
  negotiated responses and smart request parsing.
+ .
+ This package contains the Python 2 version of Flask API
 
 Package: python3-flask-api
 Architecture: all
@@ -47,3 +49,5 @@ Description: Browsable web APIs for the Flask micro web framework
  Flask API is an implementation of the same web browsable APIs that the
  Django REST framework provides. It gives you properly content
  negotiated responses and smart request parsing.
+ .
+ This package contains the Python 3 version of Flask API
